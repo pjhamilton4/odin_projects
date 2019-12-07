@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <h1>Etch-a-Sketch</h1>
+
+    <!--<button id="black" class="color selected">Black</button>
+    <button id="rainbow" class="color">Random</button>
+    <button id="lightgradient" class="color">Light Gradient</button>
+    <button id="darkgradient" class="color">Dark Gradient</button> -->
+    <div>
+        <button id="clear" onclick="promptandReset()">Reset Grid</button>
+        <!--<button id="smooth" class="off">Smooth</button>
+        <button id="propagate" class="off">Propagate</button> -->
+    </div>
+    <div id="main-container" class="container">
+    </div>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script language="javascript">
+        drawBoard(16);
+    </script>
+</body>
+
+</html>
