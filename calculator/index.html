@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Odin Calculator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="calculator-main">
+        <div class="calculator-display-div">
+            <input class="calculator-display" type="text" id="result"/>
+        </div>
+        <div class="calculator-buttons">
+            <button id="clear-btn" class="normal-btn clear-btn" onclick="clearScreen()">C</button>
+            <button id="paren-btn" class="normal-btn" value="()" onclick="storeOp(this.value)">()</button>
+            <button id="percent-btn" class="normal-btn" value="%" onclick="storeOp(this.value)">%</button>
+            <button id="division-btn" class="normal-btn" value="/" onclick="storeOp(this.value)">÷</button>
+            <button id="seven-btn" class="normal-btn" value="7" onclick="addNumber(this.value)">7</button>
+            <button id="eight-btn" class="normal-btn" value="8" onclick="addNumber(this.value)">8</button>
+            <button id="nine-btn" class="normal-btn" value="9" onclick="addNumber(this.value)">9</button>
+            <button id="multiply-btn" class="normal-btn" value="x" onclick="storeOp(this.value)">x</button>
+            <button id="four-btn" class="normal-btn" value="4" onclick="addNumber(this.value)">4</button>
+            <button id="five-btn" class="normal-btn" value="5" onclick="addNumber(this.value)">5</button>
+            <button id="six-btn" class="normal-btn" value="6" onclick="addNumber(this.value)">6</button>
+            <button id="minus-btn" class="normal-btn" value="-" onclick="storeOp(this.value)">-</button>
+            <button id="one-btn" class="normal-btn" value="1" onclick="addNumber(this.value)">1</button>
+            <button id="two-btn" class="normal-btn" value="2" onclick="addNumber(this.value)">2</button>
+            <button id="three-btn" class="normal-btn" value="3" onclick="addNumber(this.value)">3</button>
+            <button id="plus-btn" class="normal-btn" value="+" onclick="storeOp(this.value)">+</button>
+            <button id="posneg-btn" class="normal-btn" value="±" onclick="storeOp(this.value)">±</button>
+            <button id="zero-btn" class="normal-btn" value="0" onclick="addNumber(this.value)">0</button>
+            <button id="decimal-btn" class="normal-btn" value="." onclick="storeOp(this.value)">.</button>
+            <button id="equal-btn" class="normal-btn" value="=" onclick="solve()">=</button>
+        </div>
+
+    </div>
+    <script src="./js/main.js" async defer></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+.calculator-main {
+    margin: 0 auto;
+    width: 50%;
+    border: 3px solid black;
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+}
+
+.calculator-display-div{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.calculator-display {
+    font-size: 4rem;
+    height: 6rem;
+    text-align: right;
+}
+
+.normal-btn{
+    font-size: 4rem;
+    text-align: center;
+    width: 6rem;
+    height: 6rem;
+}
+
+.clear-btn{
+    color: red;
+}
